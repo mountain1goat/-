@@ -1,0 +1,23 @@
+.divbtn {
+    margin: 20px auto;
+    background-color: cadetblue;
+    width: 480px; height: 100px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+button {
+    margin: auto 20px;
+    width: 80px; height: 50px;
+}
+
+.divimg {
+    background-color: #b4b4ff;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+}
+.divbtn > img {
+    margin: 0 auto;
+}

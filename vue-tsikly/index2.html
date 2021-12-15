@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script defer src="./js/main2.js"></script>
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+
+<body>
+    <div id="app">
+
+        <ul class="array" >
+            <!-- <a> currentIndex==index   item.title === currentItem.title </a> -->
+            <li class="array-li" v-for='(item,index) in array' :class="{ 'active-item': item.title === currentItem.title  }" @click='showCard(item)'>{{index+1}} - {{item.title}} </li>
+        </ul>
+        <p class="content">{{currentItem.content}} </p>
+        <hr>
+        <input type="text" v-model='currentTodo' @keydown.enter='addTodoItem'>
+        <button @click='addTodoItem'>Add</button>
+        <ul>
+            <li v-for='(item,index) in todos'>{{item}}</li>
+        </ul>
+    </div>
+</body>
+
+</html>

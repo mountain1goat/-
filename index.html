@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://unpkg.com/vue@next"></script>
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h2>{{ hello }} - by))</h2>
+        <input type="number" v-model="x">
+        <span>+</span>
+        <input type="number" v-model="y">
+        <button @click="getSum">Click</button>
+        <p>{{ res }}</p>
+        <hr>
+        <button @click="calcClick">kolvo clicks: {{ countClick }}</button>
+        <p v-show="countClick % 2 !== 0">111111111111111111111111</p>
+        <p v-show="countClick % 2 === 0">222222222222222222222222</p>
+        <hr>
+        <img :src="img" width="250" alt="">
+
+
+        <br><br><br>
+        <hr>
+
+        <h2>Задачи</h2>
+        <h3>1.</h3>
+        <h4>Сегодня: {{ today.toLocaleDateString() }} – {{ toDWeek }}, а завтра – {{ nextDay.toLocaleDateString() }} ({{
+            getDayTom() }})</h4>
+        <h3>2.</h3>
+        <input type="number" v-model="ch">
+        <button @click="getChet">Какое?</button>
+        <p>{{ chet }}</p>
+        <h3>3.</h3>
+        <h4>Угадайте число</h4>
+        <input type="number" v-model="ch3">
+        <button @click="getCh3">Угадал/а?</button>
+        <p> {{res3}} </p>
+        
+    </div>
+    
+</body>
+
+</html>

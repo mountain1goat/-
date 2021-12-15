@@ -1,0 +1,23 @@
+.content{
+    min-width: 100px;
+    padding: 20px;
+    border: 1px solid turquoise;
+    border-radius: 5px;
+    min-height: 150px;
+}
+.array-li{
+    
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    max-width: 300px;
+    list-style: none;
+    
+
+    /* background-color: rgb(204, 247, 242); */
+    border: 1px solid turquoise;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.active-item{
+    background-color: rgb(205, 240, 108);
+}

@@ -1,0 +1,30 @@
+#app {
+    width: 550px; 
+    height: 550px; 
+    background-color: 
+    #c6fdd4; 
+    margin: 10px auto;
+}
+form {
+    margin:50px;
+    background-color: #ffd3aa;
+    width: 450px; height: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+form > div {
+    padding: 10px;
+}
+
+table {
+    margin:50px;
+    background-color: #ffd3aa;
+    width: 450px; height: 200px;
+    padding: 10px;
+    border: blueviolet 1px solid;
+}
+tbody >tr {
+ background-color:rgba(163, 226, 228, 0.5);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://unpkg.com/vue@next"></script>
+    <script defer src="scr.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h3>4.</h3>
+        <div id="app">
+            <form>
+                <div>Name: <br>
+                    <input type="text" id="name" v-model="nameM">
+                </div>
+                <div>
+                    Surname: <br>
+                    <input type="text" id="surname" v-model="surnameM">
+                </div>
+                <div>
+                    Email: <br>
+                    <input type="email" id="email" v-model="emailM">
+                </div>
+                <div>
+                    Age: <br>
+                    <input type="number" min="1" max="100" id="age" v-model="ageM">
+                </div>
+                <div><button @click="toShow">Enter</button></div>
+                <div><button @click="toClear">Remove</button></div>
+            </form>
+            <table v-show='conclusion'>
+                <tr>
+                    <td>Name:</td>
+                    <td>{{ nameM }}</td>
+                </tr>
+                <tr>
+                    <td>Surname:</td>
+                    <td>{{ surnameM }}</td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>{{ emailM }}</td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td>{{ ageM }}</td>
+                </tr>
+            </table>
+        </div>
+</body>
+</html>
